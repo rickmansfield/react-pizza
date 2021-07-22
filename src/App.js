@@ -40,7 +40,7 @@ export default function App () {
       </Route>
       <Pic pic={url}/>
       <Route >
-        <Form ></Form>
+        <Form id="pizza-form" path="/pizza">SHOW ME</Form>
       </Route>
     </Container>
 
