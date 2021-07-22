@@ -35,9 +35,12 @@ export default function App () {
  
  
     <Container>
-      <Header />
+      <Route>
+      <Header id="order-pizza"path='/'/>
+      </Route>
       <Pic pic={url}/>
-      <Route path='/'>TEST ME <Form></Form>
+      <Route >
+        <Form ></Form>
       </Route>
     </Container>
 
