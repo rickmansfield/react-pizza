@@ -26,15 +26,16 @@ const Container = styled.div`
   color: dodgerblue;
 }`;
 
+
+
 export default function App () {
+  const [url, setUrl] =useState("https://buff.ly/2UybmBQ");
   return (
  
  
     <Container>
       <Header />
-  
-p>
-      <Pic />
+      <Pic pic={url}/>
     </Container>
   );
 }
