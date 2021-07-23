@@ -17,13 +17,10 @@ const Container = styled.div`
   color: dodgerblue;
 }`;
 
-// const initialFormValues = {
-//   name-input: "",
-//   email: "",
-//   password: "",
-//   terms: "",
-// };
+const initialFormValues = {
+  username:"",
 
+};
 
 export default function App () {
   const [url, setUrl] =useState("https://buff.ly/2UybmBQ");
