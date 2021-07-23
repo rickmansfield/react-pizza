@@ -18,7 +18,8 @@ const Container = styled.div`
 }`;
 
 const initialFormValues = {
-  username:"",
+  username: '',
+  size: '',
 
 };
 
@@ -32,7 +33,7 @@ export default function App () {
       <Switch>
         
       <Route exact path="/components/pizza">
-        <OrderPizza id="pizza-form" >SHOW ME</OrderPizza>
+        <OrderPizza >SHOW ME</OrderPizza>
       </Route>
       
       <Route path='/'>
