@@ -9,17 +9,19 @@ export default function Header(){
     return (
         <Headers>
             <div>
-            <h1>Lambda Eats</h1>
+            <h1>Rick's Pizza Practice</h1>
             <nav className="home-login-subscribe">
             <a href="index.html">HOME</a>
             <a href="index.html">LogIn/Out</a>
             <a href="index.html">Subscribe</a>
             <Link to={'/components/pizza'}>
-            <a href="index.html">ORDER PIZZA</a>
+            <button>ORDER PIZZA</button>
             </Link>
             </nav>
+
             </div>
-            
+
+
             
 
             <section className="logo">
@@ -56,6 +58,20 @@ margin: 0 1%;
     transition: all 0.5s ease-in-out;
 }
 transition: all 0.5s ease-in-out;
+
+button{
+text-decoration: none;
+background-color: rgb(179, 170, 170);
+padding: 1%;
+border-radius: 25%;
+margin: 0 1%;
+&:hover{
+    background-color: rgb(11, 223, 57);
+    transform:scale(2);
+    transition: all 0.5s ease-in-out;
+}
+transition: all 0.5s ease-in-out;
+
 
 header{
 background-color:#444c55;
