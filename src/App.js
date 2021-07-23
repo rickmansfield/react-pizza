@@ -4,7 +4,7 @@ import { Route, Link, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import styled from "styled-components";
 import Pic from './components/Pic'
-import Form from './components/pizza'
+import OrderPizza from './components/pizza'
 import * as yup from "yup";
 // import schema from "./validations/formSchema";
 
@@ -31,14 +31,14 @@ export default function App () {
  
  
     <Container>
+      <Header id="order-pizza"/>
       <Switch>
         
-      <Route >
-        <Form id="pizza-form" path="components/pizza">SHOW ME</Form>
+      <Route exact path="/components/pizza">
+        <OrderPizza id="pizza-form" >SHOW ME</OrderPizza>
       </Route>
       
-      <Route>
-      <Header id="order-pizza"path='/'/>
+      <Route path='/'>
       <Pic pic={url}/>
       </Route>
       
