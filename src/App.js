@@ -1,15 +1,3 @@
-// import React from "react";
-
-// const App = () => {
-//   return (
-//     <>
-//       <h1>Lambda Eats</h1>
-//       <p>You can remove this code and create your own header</p>
-//     </>
-//   );
-// };
-// export default App;
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Route, Link, Switch } from 'react-router-dom';
@@ -17,6 +5,8 @@ import Header from './components/Header';
 import styled from "styled-components";
 import Pic from './components/Pic'
 import Form from './components/pizza'
+import * as yup from "yup";
+// import schema from "./validations/formSchema";
 
 const Container = styled.div`
 *{
@@ -27,6 +17,12 @@ const Container = styled.div`
   color: dodgerblue;
 }`;
 
+// const initialFormValues = {
+//   name-input: "",
+//   email: "",
+//   password: "",
+//   terms: "",
+// };
 
 
 export default function App () {
@@ -36,17 +32,19 @@ export default function App () {
  
     <Container>
       <Switch>
-      
-      <Route>
-      <Header id="order-pizza"path='/'/>
-      </Route>
-      
+        
       <Route >
         <Form id="pizza-form" path="components/pizza">SHOW ME</Form>
       </Route>
       
-      </Switch>
+      <Route>
+      <Header id="order-pizza"path='/'/>
       <Pic pic={url}/>
+      </Route>
+      
+      
+      </Switch>
+      
     </Container>
 
 
